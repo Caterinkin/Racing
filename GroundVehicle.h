@@ -1,5 +1,4 @@
-#pragma once
-// Класс для наземных ТС
+// ГЉГ«Г Г±Г± Г¤Г«Гї Г­Г Г§ГҐГ¬Г­Г»Гµ Г’Г‘
 
 #ifndef GROUNDVEHICLE_H
 #define GROUNDVEHICLE_H
@@ -9,15 +8,15 @@
 class GroundVehicle : public Vehicle
 {
   protected:
-    double moveTime;           // Время движения до отдыха (часы)
-    double restTimeFirst;      // Время отдыха после первого этапа (часы)
-    double restTimeSubsequent; // Время отдыха после последующих этапов (часы)
+    double moveTime;           // Г‚Г°ГҐГ¬Гї Г¤ГўГЁГ¦ГҐГ­ГЁГї Г¤Г® Г®ГІГ¤Г»ГµГ  (Г·Г Г±Г»)
+    double restTimeFirst;      // Г‚Г°ГҐГ¬Гї Г®ГІГ¤Г»ГµГ  ГЇГ®Г±Г«ГҐ ГЇГҐГ°ГўГ®ГЈГ® ГЅГІГ ГЇГ  (Г·Г Г±Г»)
+    double restTimeSubsequent; // Г‚Г°ГҐГ¬Гї Г®ГІГ¤Г»ГµГ  ГЇГ®Г±Г«ГҐ ГЇГ®Г±Г«ГҐГ¤ГіГѕГ№ГЁГµ ГЅГІГ ГЇГ®Гў (Г·Г Г±Г»)
 
   public:
-    // Конструктор
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г°
     GroundVehicle(const std::string& name, double speed, double moveTime, double restTimeFirst, double restTimeSubsequent);
 
-    // Метод для расчета времени прохождения дистанции с учетом отдыха
+    // ГЊГҐГІГ®Г¤ Г¤Г«Гї Г°Г Г±Г·ГҐГІГ  ГўГ°ГҐГ¬ГҐГ­ГЁ ГЇГ°Г®ГµГ®Г¦Г¤ГҐГ­ГЁГї Г¤ГЁГ±ГІГ Г­Г¶ГЁГЁ Г± ГіГ·ГҐГІГ®Г¬ Г®ГІГ¤Г»ГµГ 
     double calculateTime(double distance) const override;
 };
 
