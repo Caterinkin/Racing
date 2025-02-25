@@ -1,5 +1,4 @@
-#pragma once
-// Класс для гонки
+// ГЉГ«Г Г±Г± Г¤Г«Гї ГЈГ®Г­ГЄГЁ
 
 #ifndef RACE_H
 #define RACE_H
@@ -11,17 +10,17 @@
 class Race
 {
   private:
-    std::vector<std::shared_ptr<Vehicle>> vehicles; // Список зарегистрированных ТС
-    double distance;                                // Дистанция гонки (км)
+    std::vector<std::shared_ptr<Vehicle>> vehicles; // Г‘ГЇГЁГ±Г®ГЄ Г§Г Г°ГҐГЈГЁГ±ГІГ°ГЁГ°Г®ГўГ Г­Г­Г»Гµ Г’Г‘
+    double distance;                                // Г„ГЁГ±ГІГ Г­Г¶ГЁГї ГЈГ®Г­ГЄГЁ (ГЄГ¬)
 
   public:
-    // Конструктор
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г°
     Race(double distance);
 
-    // Метод для добавления ТС в гонку
+    // ГЊГҐГІГ®Г¤ Г¤Г«Гї Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї Г’Г‘ Гў ГЈГ®Г­ГЄГі
     void addVehicle(std::shared_ptr<Vehicle> vehicle);
 
-    // Метод для запуска гонки и вывода результатов
+    // ГЊГҐГІГ®Г¤ Г¤Г«Гї Г§Г ГЇГіГ±ГЄГ  ГЈГ®Г­ГЄГЁ ГЁ ГўГ»ГўГ®Г¤Г  Г°ГҐГ§ГіГ«ГјГІГ ГІГ®Гў
     void runRace() const;
 };
 
