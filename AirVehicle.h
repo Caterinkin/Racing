@@ -1,5 +1,4 @@
-#pragma once
-// Класс для воздушных ТС
+// ГЉГ«Г Г±Г± Г¤Г«Гї ГўГ®Г§Г¤ГіГёГ­Г»Гµ Г’Г‘
 
 #ifndef AIRVEHICLE_H
 #define AIRVEHICLE_H
@@ -9,13 +8,13 @@
 class AirVehicle : public Vehicle
 {
   protected:
-    double distanceReductionCoefficient; // Коэффициент сокращения расстояния (%)
+    double distanceReductionCoefficient; // ГЉГ®ГЅГґГґГЁГ¶ГЁГҐГ­ГІ Г±Г®ГЄГ°Г Г№ГҐГ­ГЁГї Г°Г Г±Г±ГІГ®ГїГ­ГЁГї (%)
 
   public:
-    // Конструктор
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г°
     AirVehicle(const std::string& name, double speed, double distanceReductionCoefficient);
 
-    // Метод для расчета времени прохождения дистанции с учетом сокращения расстояния
+    // ГЊГҐГІГ®Г¤ Г¤Г«Гї Г°Г Г±Г·ГҐГІГ  ГўГ°ГҐГ¬ГҐГ­ГЁ ГЇГ°Г®ГµГ®Г¦Г¤ГҐГ­ГЁГї Г¤ГЁГ±ГІГ Г­Г¶ГЁГЁ Г± ГіГ·ГҐГІГ®Г¬ Г±Г®ГЄГ°Г Г№ГҐГ­ГЁГї Г°Г Г±Г±ГІГ®ГїГ­ГЁГї
     double calculateTime(double distance) const override;
 };
 
