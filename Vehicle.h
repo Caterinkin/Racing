@@ -1,5 +1,4 @@
-#pragma once
-// Базовый класс для ТС
+// ГЃГ Г§Г®ГўГ»Г© ГЄГ«Г Г±Г± Г¤Г«Гї Г’Г‘
 
 #ifndef VEHICLE_H
 #define VEHICLE_H
@@ -9,20 +8,20 @@
 class Vehicle
 {
   protected:
-    std::string name; // Название ТС
-    double speed;     // Скорость ТС (км/ч)
+    std::string name; // ГЌГ Г§ГўГ Г­ГЁГҐ Г’Г‘
+    double speed;     // Г‘ГЄГ®Г°Г®Г±ГІГј Г’Г‘ (ГЄГ¬/Г·)
 
   public:
-    // Конструктор
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г°
     Vehicle(const std::string& name, double speed);
 
-    // Виртуальный метод для расчета времени прохождения дистанции
+    // Г‚ГЁГ°ГІГіГ Г«ГјГ­Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї Г°Г Г±Г·ГҐГІГ  ГўГ°ГҐГ¬ГҐГ­ГЁ ГЇГ°Г®ГµГ®Г¦Г¤ГҐГ­ГЁГї Г¤ГЁГ±ГІГ Г­Г¶ГЁГЁ
     virtual double calculateTime(double distance) const = 0;
 
-    // Геттер для названия ТС
+    // ГѓГҐГІГІГҐГ° Г¤Г«Гї Г­Г Г§ГўГ Г­ГЁГї Г’Г‘
     std::string getName() const;
 
-    // Геттер для скорости ТС
+    // ГѓГҐГІГІГҐГ° Г¤Г«Гї Г±ГЄГ®Г°Г®Г±ГІГЁ Г’Г‘
     double getSpeed() const;
 };
 
